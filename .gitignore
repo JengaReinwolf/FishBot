@@ -1,0 +1,5 @@
+config.json
+.venv/
+.vscode/
+*.tar
+fishbot-deployment.yml
