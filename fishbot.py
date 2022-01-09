@@ -5,7 +5,7 @@ import unicodedata
 import discord
 
 BWEE_RE = re.compile(r"b+[b*|~\n ]*w+[w*|~\n ]*e+[e*|~\n ]*e+", re.IGNORECASE | re.MULTILINE)
-SQUEE_RE = re.compile(r"s+[s*|~\n ]*[q+[q*|~\n ]*[uw]+[uw*|~\n ]*e+[e*|~\n ]*e+", re.IGNORECASE | re.MULTILINE)
+SQUEE_RE = re.compile(r"s+[s*|~\n ]*[q+[q*|~\n ]+[uw]+[uw*|~\n ]*e+[e*|~\n ]*e+", re.IGNORECASE | re.MULTILINE)
 
 client = discord.Client()
 with open("config.json", "rb") as f:
